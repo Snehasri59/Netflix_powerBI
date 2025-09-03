@@ -16,8 +16,6 @@
 * **Bars**: **Top 10 Genres** and **Top 10 Directors**
 * Thoughtful theming: neon reds, soft shadows, rounded containers, and readable contrast.
 
-![Section Preview](assets/section-preview.png)
-
 ---
 
 ## 🧠 Insights at a glance
@@ -34,65 +32,6 @@
 * **Source**: Public Netflix titles dataset (e.g., Kaggle).
 * **Core fields**: `title`, `type`, `country`, `release_year`, `listed_in (genre)`, `director`.
 * **Model**: A tidy single-table star-lite setup with calculated measures to keep visuals fast.
-
-### 🧮 Sample Measures (DAX)
-
-```DAX
-Titles = COUNTROWS('titles')
-
-Movies =
-CALCULATE( [Titles], 'titles'[type] = "Movie" )
-
-TV Shows =
-CALCULATE( [Titles], 'titles'[type] = "TV Show" )
-
-% Movies = DIVIDE( [Movies], [Titles] )
-% TV Shows = DIVIDE( [TV Shows], [Titles] )
-```
-
----
-
-## 🚀 Quick start
-
-1. **Clone** this repo
-
-   ```bash
-   git clone https://github.com/<your-username>/netflix-powerbi-dashboard.git
-   ```
-2. Open `Netflix_Dashboard.pbix` in **Power BI Desktop**.
-3. (Optional) Replace the CSV path in **Transform Data → Data Source Settings** and click **Refresh**.
-4. Explore! Use the map, legend, and slicers to drill into countries, genres, and years.
-
----
-
-## 🖼️ Screenshots
-
-> Put your images in `assets/` and keep the names below (or update links).
-
-* Overview:
-  `assets/hero-netflix-dashboard.png`
-  ![Overview](assets/hero-netflix-dashboard.png)
-
-* Movies vs TV Shows:
-  `assets/movies-vs-tv-donut.png`
-  ![Movies vs TV Shows Donut](assets/movies-vs-tv-donut.png)
-
-* World Map:
-  `assets/titles-by-country-map.png`
-  ![Titles by Country Map](assets/titles-by-country-map.png)
-
-* Trends Over Years:
-  `assets/titles-over-years.png`
-  ![Titles Over Years](assets/titles-over-years.png)
-
-* Top 10s:
-  `assets/top10-genre.png`
-  ![Top 10 Genre](assets/top10-genre.png)
-
-  `assets/top10-directors.png`
-  ![Top 10 Directors](assets/top10-directors.png)
-
-> Tip: In Power BI, **File → Export → Export to PDF** or **Export → PNG** for crisp images. Keep a consistent 16:9 canvas for screenshots.
 
 ---
 
