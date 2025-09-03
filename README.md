@@ -72,19 +72,6 @@
 * **Power BI Desktop**
 * **Power Query** for cleaning
 * **DAX** for measures
-* (Optional) **Python/R scripts** for preprocessing
-
----
-
-## 🔮 Roadmap
-
-* ✅ Page tooltips with mini-cards
-* ⏳ Drill-through pages by country/genre
-* ⏳ Content rating analysis & duration distributions
-* ⏳ Decomposition tree for discovery paths
-* ⏳ Denser model (date table + relationships) for seasonality
-
-Have ideas? Open an **Issue** or drop a **PR**! 🙌
 
 ---
 
@@ -98,19 +85,3 @@ This project is for educational/portfolio purposes. All trademarks and brand ass
 
 If you like this dashboard, star ⭐ the repo and connect with me.
 Happy analyzing — and enjoy the show! 🍿🎥
-
----
-
-### 📌 Notes for your repo
-
-* Save your two dashboard images as:
-
-  * `assets/hero-netflix-dashboard.png` (the full dashboard)
-  * `assets/movies-vs-tv-donut.png` (the donut/left panel)
-    You can add more from your report using **Export → PNG** and place them in `assets/`.
-* If you want shields/badges, add something like:
-
-  ```
-  ![Power BI](https://img.shields.io/badge/Power%20BI-Data%20Viz-yellow)
-  ![Dataset](https://img.shields.io/badge/Dataset-Public-blue)
-  ```
